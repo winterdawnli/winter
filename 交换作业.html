@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>交换</title>
+</head>
+<script type="text/javascript">
+
+	window.onload =function () {
+		var aInps = document.getElementsByTagName('input')
+		var oBtn = document.getElementById('btn')
+
+		oBtn.onclick =function () {
+			var tmp = aInps[0].value
+
+			aInps[0].value = aInps[1].value
+
+			aInps[1].value = tmp
+		}
+	}
+</script>
+<body>
+	<input type="text" name="">
+	<input type="text" name="">
+	<button id="btn">交换</button>
+</body>
+</html>
